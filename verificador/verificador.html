@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de idade</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header><h1>Verificador de idade</h1></header>
+
+    <section>
+        <div>
+            <legend>Ano de nascimento:</legend>
+            <input type="number" id="ano" min="0" required>
+            <legend>Sexo:</legend>
+            <input type="radio" name="sexo" id="homem">
+            <label for="masc">Masculino</label>
+            <input type="radio" name="sexo" id="mulher">
+            <label for="fem">Feminino</label>
+            <button onclick="verificar()">Verificar</button>
+        </div>
+
+        <div id="res">
+            <p>Preencha os dados</p>
+        </div>
+        
+    </section>
+    
+    <footer><p>&copy; Nathally Souza<p></footer>
+    <script src="./scripts/verificador.js"></script>
+</body>
+</html>
